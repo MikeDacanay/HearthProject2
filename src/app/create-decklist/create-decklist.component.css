@@ -1,0 +1,20 @@
+.list {
+	background-color: red;
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+
+.showCard{
+	background-color: orange;
+    height: 352px;
+    width: 333px;
+    margin: 0px 16px;
+}
+
+
+.deck {
+    width: 355px;
+    height: 503px;
+    overflow: scroll;
+}
