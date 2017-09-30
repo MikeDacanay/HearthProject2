@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CreateDecklistComponent } from './create-decklist/create-decklist.component';
 import { StreamProComponent } from './stream-pro/stream-pro.component';
 import { ProListComponent } from './pro-list/pro-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProListComponent } from './pro-list/pro-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [Cards],
   bootstrap: [AppComponent]

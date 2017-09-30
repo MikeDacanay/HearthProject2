@@ -1,8 +1,12 @@
 <div class = 'list'>
+{{card | json}}
 	<div class = 'showCard'>
 	</div>
-	<form>
-		<input type ='text'>
+	<form (submit)='grabCard()'>
+		<input
+		type ='text'
+		name ='card'
+		[(ngModel)]= 'card'>
 		<input type = 'submit' value = 'Add'>
 	</form>
 	<div class = 'deck'> 

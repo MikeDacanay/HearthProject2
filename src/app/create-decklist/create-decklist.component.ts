@@ -9,22 +9,24 @@ import { Cards } from './cardlist';
 export class CreateDecklistComponent implements OnInit {
   
   decklist = [];
+  
+  card = '';
 
   constructor(public _cards: Cards) {
   }
 
   ngOnInit() {
-  	this.grabCard('The Lich King');
   }
 
 
 
-  grabCard(card){
+  grabCard(){
   	// console.log(this._cards.CardCollection);
-  	if(String(card) in this._cards.CardCollection){
-  		console.log(card);
+  	if(String(this.card).toLowerCase() in this._cards.CardCollection){
+  		this.decklist.push(String(this.card));
+  		console.log(this.decklist);
   	}else{
-  		console.log('not here');
+  		console.log('not in Hearthstone');
   	}
   }
 }
