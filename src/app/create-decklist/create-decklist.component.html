@@ -2,43 +2,16 @@
 {{card | json}}
 	<div class = 'showCard'>
 	</div>
-	<form (submit)='grabCard()'>
+	<form class = 'submit' (submit)='grabCard()'>
 		<input
 		type ='text'
 		name ='card'
-		[(ngModel)]= 'card'>
-		<input type = 'submit' value = 'Add'>
+		[(ngModel)]= 'card'
+		class = 'addCards'>
+		<input class = 'submit' type = 'submit' value = 'Add'>
 	</form>
+	<p class = 'valid' *ngIf='validator== false'>Not in the Database</p>
 	<div class = 'deck'> 
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
-	    <p>TEST</p>
+		<p *ngFor="let card of decklist">{{card}}</p>
 	</div>                            
 </div>

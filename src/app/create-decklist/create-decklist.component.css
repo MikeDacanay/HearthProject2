@@ -18,3 +18,15 @@
     height: 503px;
     overflow: scroll;
 }
+
+.addCards {
+    width: 131px;
+    display: inline-block;
+}
+
+.submit {
+    display: inline-block;   
+}
+.valid {
+    display: inline-block;
+}   

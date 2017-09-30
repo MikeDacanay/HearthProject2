@@ -12,6 +12,8 @@ export class CreateDecklistComponent implements OnInit {
   
   card = '';
 
+  validator = true;
+
   constructor(public _cards: Cards) {
   }
 
@@ -24,9 +26,9 @@ export class CreateDecklistComponent implements OnInit {
   	// console.log(this._cards.CardCollection);
   	if(String(this.card).toLowerCase() in this._cards.CardCollection){
   		this.decklist.push(String(this.card));
-  		console.log(this.decklist);
+      this.validator = true;
   	}else{
-  		console.log('not in Hearthstone');
+  		this.validator = false;
   	}
   }
 }
