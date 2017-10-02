@@ -12,6 +12,9 @@
 	</form>
 	<p class = 'valid' *ngIf='validator== false'>Not in the Database</p>
 	<div class = 'deck'> 
-		<p *ngFor="let card of decklist">{{card}}</p>
-	</div>                            
+		<p *ngFor="let card of decklist" class='card'>{{card}}</p>
+	</div>
+	<button type='button'>Save</button>
+	<button type='button'>Save New</button>
+	<button type='button'>Clear</button>        
 </div>

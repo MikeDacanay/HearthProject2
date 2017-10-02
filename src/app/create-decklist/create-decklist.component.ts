@@ -13,6 +13,7 @@ export class CreateDecklistComponent implements OnInit {
   card = '';
 
   validator = true;
+  validator2 = true;
 
   constructor(public _cards: Cards) {
   }
@@ -30,5 +31,7 @@ export class CreateDecklistComponent implements OnInit {
   	}else{
   		this.validator = false;
   	}
+
+    /// Work on counting if it exist on array twice
   }
 }

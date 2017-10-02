@@ -16,7 +16,8 @@
 .deck {
     width: 355px;
     height: 503px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .addCards {
@@ -27,6 +28,12 @@
 .submit {
     display: inline-block;   
 }
+
 .valid {
     display: inline-block;
 }   
+
+.card {
+	border: 1px solid black;
+	margin: 0;
+}
